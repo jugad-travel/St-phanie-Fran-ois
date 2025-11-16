@@ -30,7 +30,7 @@ export default function CabinetAccesPage() {
         <div className="max-w-4xl space-y-12">
           {/* Adresse & Plan */}
           <div>
-            <h2 className="text-2xl font-serif font-semibold text-brand-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-brand-900 mb-6">
               Adresse & Plan
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -65,7 +65,7 @@ export default function CabinetAccesPage() {
 
           {/* Accès transports */}
           <div>
-            <h2 className="text-2xl font-serif font-semibold text-brand-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-brand-900 mb-6">
               Accès en transports en commun
             </h2>
             <Card>
@@ -87,7 +87,7 @@ export default function CabinetAccesPage() {
 
           {/* Infos pratiques */}
           <div>
-            <h2 className="text-2xl font-serif font-semibold text-brand-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-brand-900 mb-6">
               Informations pratiques
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -108,7 +108,7 @@ export default function CabinetAccesPage() {
 
           {/* Galerie */}
           <div>
-            <h2 className="text-2xl font-serif font-semibold text-brand-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-brand-900 mb-6">
               Le cabinet
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

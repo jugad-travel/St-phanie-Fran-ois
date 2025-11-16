@@ -51,7 +51,7 @@ export default function ContactPage() {
         <div className="max-w-4xl space-y-12">
           {/* Coordonnées */}
           <div>
-            <h2 className="text-2xl font-serif font-semibold text-brand-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-brand-900 mb-6">
               Coordonnées
             </h2>
             <ContactBlock />
@@ -59,7 +59,7 @@ export default function ContactPage() {
 
           {/* Formulaire */}
           <div>
-            <h2 className="text-2xl font-serif font-semibold text-brand-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-brand-900 mb-6">
               Envoyer un message
             </h2>
             <form

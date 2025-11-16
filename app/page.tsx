@@ -60,8 +60,8 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        title="Retrouver la mobilité, apaiser les tensions."
-        subtitle="Ostéopathe à Lille — prise en charge personnalisée pour adultes, femmes enceintes, nourrissons, sportifs et seniors."
+        title="Retrouver le confort et la liberté de mouvement."
+        subtitle="Ostéopathe à Lille — soins adaptés à chaque étape de la vie : adultes, grossesse, nourrissons, sportifs, seniors."
         secondaryCTA={{
           label: "Découvrir le cabinet",
           href: "/cabinet-acces",
@@ -72,7 +72,7 @@ export default function HomePage() {
       <section className="py-6 sm:py-8" style={{ backgroundColor: '#7e5865' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-6 sm:mb-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-white">
               Ils témoignent
             </h2>
           </div>
@@ -128,19 +128,16 @@ export default function HomePage() {
       </section>
 
       {/* Section Problème */}
-      <Section title="Une approche adaptée à chaque patient" bg="white">
+      <Section title="Une séance adaptée à chaque besoin" bg="white">
         <div className="max-w-4xl space-y-6 text-muted leading-relaxed">
           <p>
-            Chaque corps est unique et mérite une attention sur mesure. Que vous cherchiez à
-            préserver votre équilibre, à apaiser une douleur récente ou ancienne, à libérer une
-            raideur ou à retrouver de l'énergie, chaque séance est adaptée à vos besoins du
-            moment.
+            Parce que chaque corps réagit à sa manière, chaque séance est construite selon ce que vous vivez aujourd'hui : une douleur qui s'installe, une tension qui revient, un manque d'énergie ou simplement l'envie de retrouver du confort. L'objectif est toujours le même : vous aider à aller mieux, sans forcer, avec ce dont votre corps a besoin.
           </p>
         </div>
       </Section>
 
       {/* Motifs de consultation */}
-      <Section title="Motifs de consultation" bg="brand-100">
+      <Section title="Pourquoi consulter ?" bg="brand-100">
         <div className="max-w-6xl mx-auto space-y-8 sm:space-y-10">
           {/* Douleurs ostéo-articulaires */}
           <motion.div
@@ -153,28 +150,9 @@ export default function HomePage() {
             <h3 className="text-xl sm:text-2xl font-serif font-semibold text-brand-900 mb-4">
               Douleurs ostéo-articulaires
             </h3>
-            <ul className="space-y-2 text-muted">
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Maux de dos : lombalgies, dorsalgies, cervicalgies</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Sciatiques et cruralgies</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Douleurs articulaires : genoux, hanches, épaules, poignets…</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Tendinites, entorses, gêne post-traumatique</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Raideurs, perte de mobilité, sensations de blocage</span>
-              </li>
-            </ul>
+            <p className="text-muted leading-relaxed">
+              Lombalgies, cervicalgies, sciatiques, articulations douloureuses, tendinites, entorses, raideurs ou perte de mobilité.
+            </p>
           </motion.div>
 
           {/* Troubles digestifs */}
@@ -188,24 +166,9 @@ export default function HomePage() {
             <h3 className="text-xl sm:text-2xl font-serif font-semibold text-brand-900 mb-4">
               Troubles digestifs
             </h3>
-            <ul className="space-y-2 text-muted">
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Reflux gastriques, brûlures d'estomac</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Ballonnements, digestion lente</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Constipation, diarrhée</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Douleurs abdominales fonctionnelles, inconfort après les repas</span>
-              </li>
-            </ul>
+            <p className="text-muted leading-relaxed">
+              Reflux, ballonnements, digestion lente, constipation, diarrhée ou inconfort abdominal.
+            </p>
           </motion.div>
 
           {/* Sphère crânienne */}
@@ -219,32 +182,9 @@ export default function HomePage() {
             <h3 className="text-xl sm:text-2xl font-serif font-semibold text-brand-900 mb-4">
               Sphère crânienne
             </h3>
-            <ul className="space-y-2 text-muted">
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Céphalées, migraines</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Acouphènes, bruxisme</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Tensions de la mâchoire (ATM)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Troubles du sommeil, fatigue persistante</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Sinusites chroniques, otites à répétition (en complément d'un suivi médical)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Sensation de tête « lourde » ou tensions oculaires</span>
-              </li>
-            </ul>
+            <p className="text-muted leading-relaxed">
+              Migraines, tensions de la mâchoire, acouphènes, troubles du sommeil, fatigue ou sinusites chroniques.
+            </p>
           </motion.div>
 
           {/* Sphère gynécologique */}
@@ -258,31 +198,12 @@ export default function HomePage() {
             <h3 className="text-xl sm:text-2xl font-serif font-semibold text-brand-900 mb-4">
               Sphère gynécologique
             </h3>
-            <ul className="space-y-2 text-muted">
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Règles douloureuses, cycles irréguliers</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Douleurs pelviennes fonctionnelles</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Inconforts liés à la fertilité ou au cycle</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Suivi de grossesse et post-partum</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Tensions du bas-ventre, inconforts lombaires associés</span>
-              </li>
-            </ul>
+            <p className="text-muted leading-relaxed">
+              Cycles douloureux, douleurs pelviennes, accompagnement du cycle, grossesse et post-partum.
+            </p>
           </motion.div>
 
-          {/* Ostéopathie de la femme enceinte */}
+          {/* Femme enceinte */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -291,33 +212,14 @@ export default function HomePage() {
             className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm"
           >
             <h3 className="text-xl sm:text-2xl font-serif font-semibold text-brand-900 mb-4">
-              Ostéopathie de la femme enceinte
+              Femme enceinte
             </h3>
-            <ul className="space-y-2 text-muted">
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Douleurs lombaires, pelviennes ou ligamentaires</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Sensation de tiraillement, lourdeur</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Troubles digestifs, reflux</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Essoufflement, fatigue</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Inconforts posturaux liés à l'évolution de la grossesse</span>
-              </li>
-            </ul>
+            <p className="text-muted leading-relaxed">
+              Lombalgies, tiraillements, reflux, fatigue, difficultés posturales liées à l'évolution de la grossesse.
+            </p>
           </motion.div>
 
-          {/* Ostéopathie pédiatrique */}
+          {/* Nourrissons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -326,47 +228,20 @@ export default function HomePage() {
             className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm"
           >
             <h3 className="text-xl sm:text-2xl font-serif font-semibold text-brand-900 mb-4">
-              Ostéopathie pédiatrique
+              Nourrissons
             </h3>
-            <ul className="space-y-2 text-muted">
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Accouchement instrumentalisé : forceps, ventouse, césarienne</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Asymétries du crâne (plagiocéphalie), torticolis</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Reflux, coliques, constipation</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Troubles du sommeil, agitation ou inconfort</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-brand-700 mt-1">•</span>
-                <span>Difficultés d'allaitement liées aux tensions buccales ou cervicales</span>
-              </li>
-            </ul>
+            <p className="text-muted leading-relaxed">
+              Torticolis, plagiocéphalie, reflux, coliques, sommeil difficile, tensions après un accouchement instrumentalisé.
+            </p>
           </motion.div>
         </div>
       </Section>
 
       {/* Retrouvez mouvement, équilibre et sérénité */}
-      <Section title="Retrouvez mouvement, équilibre et sérénité" bg="white">
+      <Section title="Améliorer vos mouvements et apaiser les tensions au quotidien." bg="white">
         <div className="max-w-4xl space-y-6 text-muted leading-relaxed">
           <p>
-            Les douleurs reflètent souvent un déséquilibre du corps, lié à une perte de mobilité
-            ou d'adaptation de certaines structures. Elles peuvent limiter vos mouvements,
-            perturber votre sommeil et diminuer votre énergie.
-          </p>
-          <p>
-            L'ostéopathie offre une approche globale et douce pour relâcher les tensions et aider
-            le corps à retrouver son équilibre naturel. Grâce à des manipulations précises, elle
-            améliore la mobilité, apaise les inconforts et contribue à prévenir l'apparition de
-            nouvelles gênes.
+            Les douleurs apparaissent souvent quand une zone perd de sa mobilité ou qu'un équilibre se rompt. L'ostéopathie aide à relâcher ces tensions, à améliorer vos mouvements et à retrouver un confort durable, tout en prévenant l'apparition de nouvelles gênes.
           </p>
         </div>
       </Section>
@@ -375,7 +250,7 @@ export default function HomePage() {
       <section className="bg-brand-100 py-8 sm:py-12 lg:py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-brand-900 sm:bg-gradient-to-r sm:from-brand-900 sm:via-brand-700 sm:to-brand-900 sm:bg-clip-text sm:text-transparent">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-brand-900 sm:bg-gradient-to-r sm:from-brand-900 sm:via-brand-700 sm:to-brand-900 sm:bg-clip-text sm:text-transparent">
               <strong>Profil et valeurs</strong>
             </h2>
           </div>
@@ -384,32 +259,16 @@ export default function HomePage() {
           <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10">
             <div className="space-y-4 sm:space-y-6 text-muted leading-relaxed text-sm sm:text-base">
               <p>
-                Diplômée de l'École Supérieure d'Ostéopathie de Lille en 2011, je vous accueille avenue de Bretagne à Lille.
+                Je suis diplômée de l'École Supérieure d'Ostéopathie de Lille depuis 2011 et je vous accueille avenue de Bretagne, entre les arrêts Canteleu et Bois-Blancs.
               </p>
               <p>
-                Le cabinet se situe entre les arrêts de métro "Canteleu" et "Bois-Blanc".
+                J'accompagne tous types de patients, avec une pratique douce et précise. Chaque séance s'adapte à votre histoire, votre rythme et votre façon de ressentir la douleur.
               </p>
               <p>
-                J'accueille <strong>tous types de patients,</strong> dans une approche
-                globale et personnalisée. L'ostéopathe réalise des manipulations non violentes afin de rétablir la mobilité des articulations, des muscles, des organes internes et des os.
+                Je travaille en tenant compte de l'ensemble du corps et de ce qui peut influencer vos tensions : habitudes de vie, contexte émotionnel, fatigue, stress…
               </p>
               <p>
-                Mon travail s'appuie sur une <strong>approche globale du corps,</strong> qui prend en compte à la
-                fois les aspects physiques, émotionnels et le mode de vie de chaque patient.
-              </p>
-              <p>
-                À l'écoute, attentive et bienveillante, j'accorde une importance particulière à la
-                compréhension du vécu et du contexte de chaque douleur.
-              </p>
-              <p>
-                Mon objectif est de vous aider à retrouver <strong>confort, mobilité et autonomie</strong> grâce à
-                des techniques précises et adaptées à votre situation.
-              </p>
-              <p>
-                L'ostéopathie permet notamment de soulager les maux de dos, les entorses, mais aussi le stress, les règles douloureuses ou encore les migraines.
-              </p>
-              <p>
-                J'ai également suivi une <strong>formation en Médecine traditionnelle chinoise - Acupuncture</strong> à l'École FLETC de Lille en 2016, ce qui enrichit ma pratique et me permet d'offrir une approche complémentaire lorsque cela est pertinent.
+                Formée également en Médecine Traditionnelle Chinoise – Acupuncture, j'intègre cette approche lorsque cela a du sens dans votre parcours.
               </p>
             </div>
           </div>
@@ -524,7 +383,7 @@ export default function HomePage() {
       {/* CTA final */}
       <Section bg="brand-100">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl font-serif font-bold text-brand-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-brand-900 mb-4">
             Prêt à prendre rendez-vous ?
           </h2>
           <p className="text-muted mb-8">

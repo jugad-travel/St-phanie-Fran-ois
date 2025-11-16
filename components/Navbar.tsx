@@ -8,7 +8,6 @@ import { PRACTICE_INFO } from "@/lib/constants";
 const navLinks = [
   { href: "/", label: "Accueil" },
   { href: "/osteopathie", label: "L'ostéopathie" },
-  { href: "/expertises", label: "Expertises" },
   { href: "/cabinet-acces", label: "Cabinet & Accès" },
   { href: "/tarifs-horaires", label: "Tarifs & Horaires" },
   { href: "/contact", label: "Contact" },

@@ -9,7 +9,7 @@ import { Calendar, Users, Clock, Heart } from "lucide-react";
 export const metadata = genMeta({
   title: "Comprendre l'ostéopathie",
   description:
-    "Découvrez l'approche ostéopathique de Colombine Poupard : une méthode manuelle globale pour améliorer la mobilité et réduire les tensions. Consultations adaptées à tous les âges.",
+    "Découvrez l'approche ostéopathique de Stéphanie François : une méthode manuelle douce pour améliorer la mobilité et réduire les tensions. Consultations adaptées à tous les âges.",
   path: "/osteopathie",
 });
 
@@ -30,58 +30,51 @@ export default function OsteopathiePage() {
         <div className="max-w-4xl space-y-12">
           {/* Approche globale */}
           <div>
-            <h2 className="text-2xl font-serif font-semibold text-brand-900 mb-4">
-              Une approche globale du corps
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-brand-900 mb-4">
+              Voir le corps autrement
             </h2>
             <div className="space-y-4 text-muted leading-relaxed">
               <p>
-                L'ostéopathie est une approche manuelle fondée sur la
-                compréhension du corps dans son ensemble. Elle considère que
-                toutes les structures du corps sont interconnectées et que leur
-                bon fonctionnement dépend de leur mobilité.
+                L'ostéopathie part d'une idée simple : quand une zone du corps bouge moins bien, c'est tout l'équilibre qui finit par se dérégler.
               </p>
               <p>
-                L'ostéopathe utilise ses mains pour évaluer et traiter les
-                restrictions de mobilité qui peuvent être à l'origine de
-                douleurs ou de dysfonctionnements. Cette approche préventive et
-                curative s'adresse à tous, du nourrisson au senior.
+                En travaillant uniquement avec ses mains, l'ostéopathe recherche ces zones qui « tirent », compensent ou s'adaptent trop — et les aide à retrouver leur mobilité naturelle.
+              </p>
+              <p>
+                Cette approche douce accompagne aussi bien les douleurs récentes que les tensions installées depuis longtemps.
               </p>
             </div>
           </div>
 
           {/* Déroulé d'une séance */}
           <div>
-            <h2 className="text-2xl font-serif font-semibold text-brand-900 mb-6">
-              Le déroulé d'une séance
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-brand-900 mb-6">
+              Une séance, comment ça se passe ?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card
-                title="1. L'écoute"
+                title="Un temps pour comprendre"
                 icon={<Heart size={24} className="text-brand-700" />}
               >
-                Un temps d'échange pour comprendre votre motif de consultation,
-                vos antécédents et votre contexte de vie.
+                On commence par discuter de votre douleur, de votre rythme de vie, de vos habitudes et de ce qui peut influencer votre corps au quotidien.
               </Card>
               <Card
-                title="2. Les tests"
+                title="Un bilan précis du corps"
                 icon={<Users size={24} className="text-brand-700" />}
               >
-                Observation et tests de mobilité pour identifier les zones de
-                restriction et établir un diagnostic ostéopathique.
+                Tests de mobilité, observation, palpation : cela permet d'identifier ce qui bloque, ce qui compense et ce qui manque de mouvement.
               </Card>
               <Card
-                title="3. Le traitement"
+                title="Le traitement"
                 icon={<Heart size={24} className="text-brand-700" />}
               >
-                Techniques manuelles douces et adaptées pour restaurer la
-                mobilité et libérer les tensions identifiées.
+                Selon ce que votre corps présente : techniques douces, travail tissulaire, mobilisations ciblées… L'objectif est de relâcher les tensions et de redonner de la fluidité.
               </Card>
               <Card
-                title="4. Les conseils"
+                title="Des conseils utiles"
                 icon={<Heart size={24} className="text-brand-700" />}
               >
-                Recommandations personnalisées pour optimiser les résultats et
-                prévenir les récidives.
+                Quelques ajustements simples (posture, étirements, gestes du quotidien) pour prolonger les effets de la séance.
               </Card>
             </div>
           </div>
@@ -93,30 +86,22 @@ export default function OsteopathiePage() {
                 <div className="flex items-center gap-3 mb-3">
                   <Clock size={24} className="text-brand-700" />
                   <h3 className="text-xl font-serif font-semibold text-brand-900">
-                    Durée
+                    Durée : 45–60 min
                   </h3>
                 </div>
-                <p className="text-muted">
-                  Une séance dure entre 45 et 60 minutes, permettant un examen
-                  complet et un traitement adapté.
-                </p>
               </div>
               <div>
                 <h3 className="text-xl font-serif font-semibold text-brand-900 mb-3">
-                  Tenue
+                  Tenue : vêtements souples ; vous restez habillé(e).
                 </h3>
-                <p className="text-muted">
-                  Privilégiez une tenue confortable qui permet de bouger
-                  facilement. Vous restez habillé pendant la séance.
-                </p>
               </div>
             </div>
           </div>
 
           {/* Publics */}
           <div>
-            <h2 className="text-2xl font-serif font-semibold text-brand-900 mb-6">
-              Les publics
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-brand-900 mb-6">
+              Pour qui ?
             </h2>
             <div className="space-y-6">
               <div id="nourrissons">
@@ -124,9 +109,7 @@ export default function OsteopathiePage() {
                   Nourrissons
                 </h3>
                 <p className="text-muted leading-relaxed">
-                  L'ostéopathie peut accompagner les nourrissons pour des
-                  troubles du sommeil, de la digestion, des torticolis, des
-                  plagiocéphalies ou après un accouchement difficile.
+                  Inconfort digestif, tête plate, torticolis, sommeil perturbé ou tensions liées à un accouchement difficile.
                 </p>
               </div>
               <div id="enfants">
@@ -134,8 +117,7 @@ export default function OsteopathiePage() {
                   Enfants
                 </h3>
                 <p className="text-muted leading-relaxed">
-                  Suivi de la croissance, troubles posturaux, accompagnement
-                  dans la pratique sportive, troubles de l'attention.
+                  Croissance, posture, sport, fatigue, manque de concentration.
                 </p>
               </div>
               <div id="femmes-enceintes">
@@ -143,9 +125,7 @@ export default function OsteopathiePage() {
                   Femmes enceintes
                 </h3>
                 <p className="text-muted leading-relaxed">
-                  Soulagement des douleurs lombaires, sciatalgies, troubles
-                  circulatoires, préparation à l'accouchement et suivi
-                  post-partum.
+                  Lombalgies, tiraillements, essoufflement, reflux, préparation à l'accouchement et récupération post-partum.
                 </p>
               </div>
               <div id="sportifs">
@@ -153,8 +133,7 @@ export default function OsteopathiePage() {
                   Sportifs
                 </h3>
                 <p className="text-muted leading-relaxed">
-                  Récupération après blessure, optimisation de la performance,
-                  prévention des blessures, amélioration de la gestuelle.
+                  Blessures, tensions récurrentes, mobilité limitée, optimisation du geste et récupération.
                 </p>
               </div>
               <div id="adultes-seniors">
@@ -162,9 +141,7 @@ export default function OsteopathiePage() {
                   Adultes & Seniors
                 </h3>
                 <p className="text-muted leading-relaxed">
-                  Douleurs chroniques, troubles musculo-squelettiques, maux de
-                  tête, troubles digestifs, stress, accompagnement du
-                  vieillissement.
+                  Douleurs articulaires, stress, migraines, troubles digestifs, raideurs, inconforts chroniques.
                 </p>
               </div>
             </div>

@@ -39,7 +39,7 @@ export default function TarifsHorairesPage() {
         <div className="max-w-4xl space-y-12">
           {/* Tarifs */}
           <div>
-            <h2 className="text-2xl font-serif font-semibold text-brand-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-brand-900 mb-6">
               Tarifs
             </h2>
             <Card>
@@ -67,7 +67,7 @@ export default function TarifsHorairesPage() {
 
           {/* Horaires */}
           <div>
-            <h2 className="text-2xl font-serif font-semibold text-brand-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-brand-900 mb-6">
               Horaires d'ouverture
             </h2>
             <Card icon={<Clock size={32} className="text-brand-700" />}>
