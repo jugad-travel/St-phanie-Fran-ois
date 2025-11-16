@@ -60,7 +60,7 @@ export function generateLocalBusinessSchema() {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5.0",
-      reviewCount: "127",
+      reviewCount: "18",
       bestRating: "5",
       worstRating: "1",
     },
@@ -94,37 +94,37 @@ export function generateLocalBusinessSchema() {
 }
 
 export function generatePersonSchema() {
-  const baseUrl = "https://www.colombine-poupard-osteopathe.fr";
+  const baseUrl = "https://www.stephanie-francois-osteopathe.fr";
   
   return {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${baseUrl}/#person`,
-    name: "Colombine Poupard",
+    name: "Stéphanie François",
     jobTitle: "Ostéopathe D.O",
     worksFor: {
       "@id": `${baseUrl}/#organization`,
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "120 Rue du Docteur Ducroquet",
-      addressLocality: "Marcq-en-Barœul",
-      postalCode: "59700",
+      streetAddress: "89 Avenue de Bretagne",
+      addressLocality: "Lille",
+      postalCode: "59000",
       addressCountry: "FR",
     },
     telephone: PRACTICE_INFO.phone.replace(/\s/g, ""),
-    email: PRACTICE_INFO.email,
+    email: PRACTICE_INFO.email || undefined,
     url: baseUrl,
     alumniOf: {
       "@type": "EducationalOrganization",
-      name: "Institut Supérieur d'Ostéopathie de Lille",
+      name: "Ecole Supérieure d'Ostéopathie - Lille",
     },
     hasCredential: {
       "@type": "EducationalOccupationalCredential",
-      credentialCategory: "Diplôme d'Ostéopathe (D.O.)",
+      credentialCategory: "Diplôme d'Ostéopathe D.O",
       recognizedBy: {
         "@type": "Organization",
-        name: "Institut Supérieur d'Ostéopathie de Lille",
+        name: "Ecole Supérieure d'Ostéopathie - Lille",
       },
     },
   };
