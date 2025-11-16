@@ -502,37 +502,23 @@ export default function HomePage() {
       <Section title="Le cabinet" bg="white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
-            { name: "cabinet-1", alt: "Cabinet d'ostéopathie - Intérieur", useImage: true, fullWidth: false },
-            { src: "/images/cabinet-interieur.png", alt: "Cabinet d'ostéopathie - Intérieur", useImage: false, fullWidth: false },
-            { src: "/images/cabinet-facade.png", alt: "Cabinet d'ostéopathie - Façade", useImage: false, fullWidth: false },
-            { name: "facade", alt: "Façade du cabinet d'ostéopathie", useImage: true, fullWidth: false },
+            { src: "/images/cabinet stephanie 1.png", alt: "Cabinet d'ostéopathie - Intérieur" },
+            { src: "/images/cabinet stephanie 2.png", alt: "Cabinet d'ostéopathie - Intérieur" },
+            { src: "/images/cabinet stephanie 3.png", alt: "Cabinet d'ostéopathie - Intérieur" },
+            { src: "/images/exterieur cabinet stephanie .png", alt: "Cabinet d'ostéopathie - Extérieur" },
           ].map((img, index) => {
-            const imgSrc: string = img.useImage 
-              ? `/images/cabinet/${(img as { name: string }).name}.webp` 
-              : (img as { src: string }).src;
             return (
               <div
                 key={index}
                 className="relative w-full h-[400px] bg-brand-100 rounded-2xl overflow-hidden group"
               >
-                {img.useImage ? (
-                  <Image
-                    src={imgSrc}
-                    alt={img.alt}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    priority={index < 2}
-                  />
-                ) : (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={imgSrc}
-                    alt={img.alt}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    loading={index < 2 ? "eager" : "lazy"}
-                  />
-                )}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading={index < 2 ? "eager" : "lazy"}
+                />
               </div>
             );
           })}
