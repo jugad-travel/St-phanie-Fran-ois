@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.colombine-poupard-osteopathe.fr";
+  const baseUrl = "https://www.stephanie-francois-osteopathe.fr";
 
   return [
     {

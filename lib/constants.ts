@@ -1,22 +1,26 @@
 // Données pratiques
 export const PRACTICE_INFO = {
-  name: "Colombine Poupard",
+  name: "Stéphanie François",
   title: "Ostéopathe D.O",
-  fullName: "Colombine Poupard, Ostéopathe D.O",
-  address: "120 Rue du Docteur Ducroquet, 59700 Marcq-en-Barœul",
-  phone: "07 58 21 10 33",
-  email: "poupard.osteo@gmail.com",
-  doctolibUrl: "https://www.doctolib.fr/osteopathe/marcq-en-baroeul/colombine-poupard/booking/motive-categories?specialityId=10&telehealth=false&placeId=practice-722228&bookingFunnelSource=profile",
+  fullName: "Stéphanie François, Ostéopathe D.O",
+  address: "89 Avenue de Bretagne, 59000 Lille",
+  phone: "03 20 10 97 69",
+  phoneEmergency: "06 09 63 53 07",
+  email: "",
+  doctolibUrl: "https://www.doctolib.fr/osteopathe/lille/stephanie-francois/booking?bookingFunnelSource=profile",
   access: {
-    bus: "Bus ligne 12 — arrêts Cheval Blanc et Ducroquet",
-    parking: "Parking gratuit",
+    metro: "Métro - Canteleu (ligne M2)",
+    bus: "Bus - Euratechnologies (ligne 53)",
+    parking: "Parking public - 41 Rue Fourier, Lille",
     floor: "Rez-de-chaussée",
+    accessibility: "Entrée accessible",
   },
   price: "60 €",
   hours: {
-    weekdays: "09:00–13:00, 14:00–20:00",
-    saturday: "09:00–13:00",
+    weekdays: "09:00–19:00",
+    saturday: "",
   },
+  rpps: "10002548351",
 };
 
 export const EXPERTISES = [
@@ -60,56 +64,17 @@ export const EXPERTISES = [
 
 export const FORMATIONS = [
   {
-    year: "2024",
-    title: "Approche ostéopathique des bébés (Niveau 1)",
-    teacher: "Dany Heintz & Eric Simon",
-  },
-  {
-    year: "2024",
-    title: "Approche ostéopathique des bébés (Niveau 2)",
-    teacher: "Dany Heintz & Eric Simon",
-  },
-  {
-    year: "2023",
-    title: "Grossesse, accouchement & post-partum",
-    teacher: "Bernard Ferru",
+    year: "2016",
+    title: "Diplôme de Médecine traditionnelle chinoise - Acupuncture",
+    teacher: "Ecole FLETC - Lille",
   },
 ];
 
 export const DIPLOMA = {
-  title: "Diplôme d'Ostéopathe (D.O.)",
-  year: "2023",
-  school: "InSO Lille",
+  title: "Diplôme d'Ostéopathe D.O",
+  year: "2011",
+  school: "Ecole Supérieure d'Ostéopathie - Lille",
 };
-
-export const PUBLICATION = {
-  year: "2023",
-  title: "Intérêt de la prise en charge ostéopathique dans les réveils nocturnes dus à des troubles hormonaux",
-  type: "mémoire",
-};
-
-export const ENTERPRISE_CLIENTS = [
-  "AMERICAN EXPRESS",
-  "Daiichi-Sankyo",
-  "Experis",
-  "Manpower",
-  "CaixaBank",
-  "KEARNEY",
-  "NOVARTIS",
-  "SeLoger",
-  "dalkia",
-  "VITOGAZ",
-  "BNP PARIBAS",
-  "BCG",
-  "RUBIS ENERGIE",
-  "DATA altares",
-  "Shell",
-  "HAS",
-  "Talent Solutions",
-  "VEOLIA",
-  "CMI FRANCE",
-  "AXA",
-];
 
 export const MOTIFS_CONSULTATION = [
   {

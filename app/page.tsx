@@ -5,13 +5,12 @@ import { Section } from "@/components/Section";
 import { Card } from "@/components/Card";
 import { Badge } from "@/components/Badge";
 import { ContactBlock } from "@/components/ContactBlock";
-import { LogoCarousel } from "@/components/LogoCarousel";
 import { Testimonial } from "@/components/Testimonial";
-import { MOTIFS_CONSULTATION, PRACTICE_INFO, ENTERPRISE_CLIENTS } from "@/lib/constants";
+import { MOTIFS_CONSULTATION, PRACTICE_INFO } from "@/lib/constants";
 import { generateLocalBusinessSchema, generatePersonSchema } from "@/lib/schema";
 import Link from "next/link";
 import Image from "next/image";
-import { Calendar, ArrowRight, Building2, Star, ChevronRight } from "lucide-react";
+import { Calendar, ArrowRight, Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import {
@@ -62,14 +61,10 @@ export default function HomePage() {
     <>
       <Hero
         title="Retrouver la mobilité, apaiser les tensions."
-        subtitle="Ostéopathe D.O à Marcq-en-Barœul — prise en charge personnalisée pour adultes, femmes enceintes, nourrissons, sportifs et seniors."
+        subtitle="Ostéopathe D.O à Lille — prise en charge personnalisée pour adultes, femmes enceintes, nourrissons, sportifs et seniors."
         secondaryCTA={{
           label: "Découvrir le cabinet",
           href: "/cabinet-acces",
-        }}
-        tertiaryCTA={{
-          label: "Offre entreprise",
-          href: "/entreprises",
         }}
       />
 
@@ -96,7 +91,7 @@ export default function HomePage() {
                 </div>
                 <span className="text-xl sm:text-2xl font-serif font-bold text-white">5,0</span>
               </div>
-              <p className="text-white text-base sm:text-lg">127 avis Google</p>
+              <p className="text-white text-base sm:text-lg">18 avis Google</p>
             </div>
             
             {/* Grille de témoignages */}
@@ -107,19 +102,19 @@ export default function HomePage() {
                 text="Excellente ostéopathe, à l'écoute et très professionnelle. Elle a su soulager mes douleurs dès la première séance, avec des manipulations douces et efficaces. On se sent tout de suite en confiance. Je la recommande sans hésiter à tous ceux qui cherchent une prise en charge sérieuse et bienveillante. Un grand merci pour votre aide précieuse !"
               />
               <Testimonial
-                name="Lionel"
-                month="mai"
-                text="Très heureux de ma séance sur mon lieu de travail : Colombine est à l'écoute et a manipulé avec douceur mes points un peu bloqués. Merci à elle, vivement recommandé."
+                name="Adeline Verfaillie"
+                month="septembre"
+                text="Cela fait quelques années maintenant que je consulte dans ce cabinet. Stéphanie est très professionnelle, très douce dans la manipulation et d'une gentillesse comme je n'ai jamais vu chez un professionnel de santé. Elle explique ce qu'elle fait et donne pas mal de conseils. On repart vraiment détendu. C'est devenu un plaisir de venir la consulter ! Je la recommande à 1000% !"
               />
               <Testimonial
-                name="Florence"
-                month="mars"
-                text="Très contente de ma séance. Colombine est passée sur mon lieu de travail le lendemain du belle chute. Elle m'a manipulé avec douceur et efficacité. Mes tensions suite à la chute se sont bien relâchées. N'hésitez pas à venir la consulter."
+                name="Gg Le mono"
+                month="novembre"
+                text="Au top !!! Merci énormément à Stéphanie qui est très professionnelle. Toujours à l'écoute et prends soin de vous et avec passion. Je n'y manquerai pas d'y retourner avec plaisir 😊."
               />
             </div>
             <div className="text-center">
               <a
-                href="https://www.google.com/search?client=safari&sa=X&sca_esv=740dc6ac61211c57&rls=en&hl=fr-FR&tbm=lcl&sxsrf=AE3TifNl6dpw8VsckpxB1fbwJA5hmg9BDg:1763029185476&q=Colombine+Poupard+Ostéopathe+D.O+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2NjY0MLc0MjE1NjUzNTEyMzU02sDI-IpRzTk_Jz83KTMvVSEgv7QgsShFwb-45PDK_ILEkoxUBRc9fwXHssziRaxEKgQA2P3W32wAAAA&rldimm=3310792453565426512&ved=2ahUKEwiEx9DC8-6QAxUcpCcCHXFTHskQ9fQKegQIRRAF&biw=1363&bih=721&dpr=2#lkt=LocalPoiReviews"
+                href="https://www.google.com/search?client=safari&sa=X&sca_esv=7e03d9ee9bc2dbda&rls=en&hl=fr-FR&biw=1366&bih=903&tbm=lcl&sxsrf=AE3TifOgiIQyqCl81nSoRF_Ly4N-IT2m5Q:1763320593400&q=François+Stéphanie+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MzI3MjI1MTa1NDEwMDUxMzMz3sDI-IpR0q0oMe_w8vzMYoXgksMrCzIS8zJTFRzLMosXseKWAwB2kmu4UgAAAA&rldimm=6272254359400546663&ved=2ahUKEwiJ3eCMsfeQAxWINvsDHVGBH04Q9fQKegQIUhAF#lkt=LocalPoiReviews"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-white hover:bg-brand-100 text-brand-700 border-2 border-brand-300 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-medium transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-700 focus:ring-offset-2"
@@ -389,17 +384,14 @@ export default function HomePage() {
           <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10">
             <div className="space-y-4 sm:space-y-6 text-muted leading-relaxed text-sm sm:text-base">
               <p>
-                Diplômée de l'Institut Supérieur d'Ostéopathie de Lille, j'ai exercé en cabinet et en
-                entreprise à Paris.
+                Diplômée de l'École Supérieure d'Ostéopathie de Lille en 2011, je vous accueille avenue de Bretagne à Lille.
               </p>
               <p>
-                De retour dans le Nord, j'accueille <strong>tous types de patients,</strong> dans une approche
-                globale et personnalisée.
+                Le cabinet se situe entre les arrêts de métro "Canteleu" et "Bois-Blanc".
               </p>
               <p>
-                J'ai également suivi une <strong>formation spécifique à la prise en charge de la femme
-                enceinte, du post-partum et du nouveau-né,</strong> afin d'accompagner ces périodes de
-                transition avec douceur et précision.
+                J'accueille <strong>tous types de patients,</strong> dans une approche
+                globale et personnalisée. L'ostéopathe réalise des manipulations non violentes afin de rétablir la mobilité des articulations, des muscles, des organes internes et des os.
               </p>
               <p>
                 Mon travail s'appuie sur une <strong>approche globale du corps,</strong> qui prend en compte à la
@@ -414,9 +406,10 @@ export default function HomePage() {
                 des techniques précises et adaptées à votre situation.
               </p>
               <p>
-                Je collabore également avec les <strong>entreprises de la métropole lilloise</strong> dans le cadre
-                de programmes de prévention et de bien-être au travail, pour réduire les tensions
-                liées à la posture sédentaire et améliorer la qualité de vie au travail.
+                L'ostéopathie permet notamment de soulager les maux de dos, les entorses, mais aussi le stress, les règles douloureuses ou encore les migraines.
+              </p>
+              <p>
+                J'ai également suivi une <strong>formation en Médecine traditionnelle chinoise - Acupuncture</strong> à l'École FLETC de Lille en 2016, ce qui enrichit ma pratique et me permet d'offrir une approche complémentaire lorsque cela est pertinent.
               </p>
             </div>
           </div>
@@ -425,7 +418,7 @@ export default function HomePage() {
         <div className="hidden lg:block absolute top-0 bottom-0 right-0 w-1/2 group overflow-hidden">
           <Image
             src="/images/hero/hero-image.webp"
-            alt="Colombine Poupard, Ostéopathe D.O"
+            alt="Stéphanie François, Ostéopathe D.O"
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"
             sizes="50vw"
@@ -439,7 +432,7 @@ export default function HomePage() {
         <div className="lg:hidden absolute top-0 bottom-0 right-0 w-full overflow-hidden opacity-20">
           <Image
             src="/images/hero/hero-image.webp"
-            alt="Colombine Poupard, Ostéopathe D.O"
+            alt="Stéphanie François, Ostéopathe D.O"
             fill
             className="object-cover"
             sizes="100vw"
@@ -451,51 +444,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section Entreprise - Version courte avec liseré cliquable */}
-      <Section title="Ostéopathie en entreprise" bg="brand-100">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="relative"
-        >
-          <Link
-            href="/entreprises"
-            className="group block pl-6 sm:pl-8 border-l-4 border-brand-700 hover:border-brand-900 transition-colors"
-          >
-            <h3 className="text-xl sm:text-2xl font-serif font-semibold text-brand-900 mb-6">
-              Pourquoi intégrer l'ostéopathie au sein de votre entreprise ?
-            </h3>
-            <div className="space-y-4 text-muted leading-relaxed max-w-4xl mb-8">
-              <p>
-                Les troubles musculo-squelettiques (TMS) sont aujourd'hui la première cause de
-                maladie professionnelle en France.
-              </p>
-              <p>
-                Postures prolongées, travail sédentaire, stress, gestes répétitifs… autant de facteurs
-                qui génèrent douleurs, tensions et baisse d'efficacité.
-              </p>
-              <p>
-                L'ostéopathie en entreprise permet de prévenir ces troubles, de réduire l'absentéisme
-                et d'améliorer durablement la qualité de vie au travail.
-              </p>
-              <p className="font-semibold text-brand-900">
-                Des collaborateurs qui se sentent mieux, c'est moins de douleurs, plus d'énergie,
-                une motivation renforcée et une performance globalement accrue.
-              </p>
-            </div>
-          </Link>
-          <Link
-            href="/entreprises"
-            className="inline-flex items-center gap-2 bg-brand-700 hover:bg-brand-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-medium shadow-md transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-700 focus:ring-offset-2"
-          >
-            <span>En savoir plus : modalités d'intervention, bénéfices concrets, entreprises déjà accompagnées…</span>
-            <ChevronRight size={18} className="flex-shrink-0" />
-          </Link>
-        </motion.div>
-      </Section>
-
       {/* Accès rapide */}
       <Section title="Accès rapide" bg="brand-100">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
@@ -505,14 +453,16 @@ export default function HomePage() {
             </h3>
             <p className="text-muted">{PRACTICE_INFO.address}</p>
             <div className="space-y-2 text-muted">
+              <p>{PRACTICE_INFO.access.metro}</p>
               <p>{PRACTICE_INFO.access.bus}</p>
               <p>{PRACTICE_INFO.access.parking}</p>
               <p>{PRACTICE_INFO.access.floor}</p>
+              <p>{PRACTICE_INFO.access.accessibility}</p>
             </div>
           </div>
           <div className="bg-brand-100 rounded-2xl p-4">
             <iframe
-              src="https://www.google.com/maps?q=120+Rue+du+Docteur+Ducroquet,+59700+Marcq-en-Barœul&output=embed"
+              src="https://www.google.com/maps?q=89+Avenue+de+Bretagne,+59000+Lille&output=embed&z=15"
               width="100%"
               height="300"
               style={{ border: 0 }}
@@ -537,10 +487,12 @@ export default function HomePage() {
                 </span>
                 <span className="text-muted text-sm sm:text-base">{PRACTICE_INFO.hours.weekdays}</span>
               </div>
-              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
-                <span className="font-semibold text-brand-900 text-base sm:text-lg">Samedi</span>
-                <span className="text-muted text-sm sm:text-base">{PRACTICE_INFO.hours.saturday}</span>
-              </div>
+              {PRACTICE_INFO.hours.saturday && (
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
+                  <span className="font-semibold text-brand-900 text-base sm:text-lg">Samedi</span>
+                  <span className="text-muted text-sm sm:text-base">{PRACTICE_INFO.hours.saturday}</span>
+                </div>
+              )}
             </div>
           </div>
         </div>

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.colombine-poupard-osteopathe.fr/sitemap.xml",
+    sitemap: "https://www.stephanie-francois-osteopathe.fr/sitemap.xml",
   };
 }

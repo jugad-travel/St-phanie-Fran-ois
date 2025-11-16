@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { PRACTICE_INFO } from "./constants";
 
-const baseUrl = "https://www.colombine-poupard-osteopathe.fr";
+const baseUrl = "https://www.stephanie-francois-osteopathe.fr";
 
 export function generateMetadata({
   title,
@@ -23,8 +23,8 @@ export function generateMetadata({
     description,
     keywords: [
       "ostéopathe",
-      "Marcq-en-Barœul",
-      "Colombine Poupard",
+      "Lille",
+      "Stéphanie François",
       "ostéopathie",
       "cabinet ostéopathie",
       "ostéopathe D.O",
@@ -37,9 +37,9 @@ export function generateMetadata({
       "Doctolib",
       "prise de rendez-vous",
     ],
-    authors: [{ name: "Colombine Poupard" }],
-    creator: "Colombine Poupard",
-    publisher: "Colombine Poupard",
+    authors: [{ name: "Stéphanie François" }],
+    creator: "Stéphanie François",
+    publisher: "Stéphanie François",
     formatDetection: {
       email: false,
       address: false,
