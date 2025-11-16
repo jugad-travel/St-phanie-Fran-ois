@@ -55,10 +55,10 @@ export function Hero({
         <div className="relative w-full h-full">
           <Image
             src={heroImageSrc}
-            alt="Stéphanie François, Ostéopathe D.O"
+            alt="Stéphanie François, Ostéopathe"
             fill
             className="object-cover"
-            style={{ objectPosition: "center center" }}
+            style={{ objectPosition: "80% center" }}
             priority
             sizes="(max-width: 768px) 100vw, 50vw"
           />

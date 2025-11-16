@@ -27,7 +27,7 @@ export function generateMetadata({
       "Stéphanie François",
       "ostéopathie",
       "cabinet ostéopathie",
-      "ostéopathe D.O",
+      "ostéopathe",
       "Lille",
       "Hauts-de-France",
       "femme enceinte",

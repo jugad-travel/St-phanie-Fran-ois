@@ -61,7 +61,7 @@ export default function HomePage() {
     <>
       <Hero
         title="Retrouver la mobilité, apaiser les tensions."
-        subtitle="Ostéopathe D.O à Lille — prise en charge personnalisée pour adultes, femmes enceintes, nourrissons, sportifs et seniors."
+        subtitle="Ostéopathe à Lille — prise en charge personnalisée pour adultes, femmes enceintes, nourrissons, sportifs et seniors."
         secondaryCTA={{
           label: "Découvrir le cabinet",
           href: "/cabinet-acces",
@@ -102,12 +102,12 @@ export default function HomePage() {
                 text="Excellente ostéopathe, à l'écoute et très professionnelle. Elle a su soulager mes douleurs dès la première séance, avec des manipulations douces et efficaces. On se sent tout de suite en confiance. Je la recommande sans hésiter à tous ceux qui cherchent une prise en charge sérieuse et bienveillante. Un grand merci pour votre aide précieuse !"
               />
               <Testimonial
-                name="Adeline Verfaillie"
+                name="Adeline"
                 month="septembre"
                 text="Cela fait quelques années maintenant que je consulte dans ce cabinet. Stéphanie est très professionnelle, très douce dans la manipulation et d'une gentillesse comme je n'ai jamais vu chez un professionnel de santé. Elle explique ce qu'elle fait et donne pas mal de conseils. On repart vraiment détendu. C'est devenu un plaisir de venir la consulter ! Je la recommande à 1000% !"
               />
               <Testimonial
-                name="Gg Le mono"
+                name="Gg"
                 month="novembre"
                 text="Au top !!! Merci énormément à Stéphanie qui est très professionnelle. Toujours à l'écoute et prends soin de vous et avec passion. Je n'y manquerai pas d'y retourner avec plaisir 😊."
               />
@@ -416,28 +416,24 @@ export default function HomePage() {
         </div>
         {/* Image positionnée absolument pour toucher les bords sup, inf et droit - Desktop */}
         <div className="hidden lg:block absolute top-0 bottom-0 right-0 w-1/2 group overflow-hidden">
-          <Image
-            src="/images/hero/hero-image.webp"
-            alt="Stéphanie François, Ostéopathe D.O"
-            fill
-            className="object-cover transition-transform duration-700 group-hover:scale-105"
-            sizes="50vw"
-            priority
-            style={{ objectPosition: 'center 30%' }}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/portrait sephanie.png"
+            alt="Stéphanie François, Ostéopathe"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            style={{ objectPosition: 'center center' }}
           />
           {/* Dégradé uniquement de droite à gauche pour fondre dans le fond */}
           <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-brand-100" />
         </div>
         {/* Image en arrière-plan sur mobile - opacité réduite */}
         <div className="lg:hidden absolute top-0 bottom-0 right-0 w-full overflow-hidden opacity-20">
-          <Image
-            src="/images/hero/hero-image.webp"
-            alt="Stéphanie François, Ostéopathe D.O"
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-            style={{ objectPosition: 'center 30%' }}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/portrait sephanie.png"
+            alt="Stéphanie François, Ostéopathe"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center center' }}
           />
           {/* Dégradé pour fondre dans le fond sur mobile */}
           <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-brand-100" />

@@ -1,8 +1,8 @@
 // Données pratiques
 export const PRACTICE_INFO = {
   name: "Stéphanie François",
-  title: "Ostéopathe D.O",
-  fullName: "Stéphanie François, Ostéopathe D.O",
+  title: "Ostéopathe",
+  fullName: "Stéphanie François, Ostéopathe",
   address: "89 Avenue de Bretagne, 59000 Lille",
   phone: "03 20 10 97 69",
   phoneEmergency: "06 09 63 53 07",
@@ -71,7 +71,7 @@ export const FORMATIONS = [
 ];
 
 export const DIPLOMA = {
-  title: "Diplôme d'Ostéopathe D.O",
+  title: "Diplôme d'Ostéopathe",
   year: "2011",
   school: "Ecole Supérieure d'Ostéopathie - Lille",
 };

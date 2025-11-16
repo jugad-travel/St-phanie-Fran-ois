@@ -20,15 +20,15 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.stephanie-francois-osteopathe.fr"),
-  title: "Ostéopathe à Lille – Stéphanie François D.O",
-  description: "Stéphanie François, ostéopathe D.O à Lille. Consultations adultes, femmes enceintes, nourrissons, sportifs. Cabinet avenue de Bretagne, entre Canteleu et Bois-Blanc. Prendre rendez-vous en ligne.",
+  title: "Ostéopathe à Lille – Stéphanie François",
+  description: "Stéphanie François, ostéopathe à Lille. Consultations adultes, femmes enceintes, nourrissons, sportifs. Cabinet avenue de Bretagne, entre Canteleu et Bois-Blanc. Prendre rendez-vous en ligne.",
   keywords: [
     "ostéopathe",
     "Lille",
     "Stéphanie François",
     "ostéopathie",
     "cabinet ostéopathie",
-    "ostéopathe D.O",
+    "ostéopathe",
     "Lille",
     "Hauts-de-France",
     "femme enceinte",
@@ -45,22 +45,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://www.stephanie-francois-osteopathe.fr",
-    siteName: "Stéphanie François, Ostéopathe D.O",
-    title: "Ostéopathe à Lille – Stéphanie François D.O",
-    description: "Stéphanie François, ostéopathe D.O à Lille. Consultations adultes, femmes enceintes, nourrissons, sportifs. Cabinet avenue de Bretagne.",
+    siteName: "Stéphanie François, Ostéopathe",
+    title: "Ostéopathe à Lille – Stéphanie François",
+    description: "Stéphanie François, ostéopathe à Lille. Consultations adultes, femmes enceintes, nourrissons, sportifs. Cabinet avenue de Bretagne.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Stéphanie François, Ostéopathe D.O à Lille",
+        alt: "Stéphanie François, Ostéopathe à Lille",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ostéopathe à Lille – Stéphanie François D.O",
-    description: "Stéphanie François, ostéopathe D.O à Lille. Consultations adultes, femmes enceintes, nourrissons, sportifs.",
+    title: "Ostéopathe à Lille – Stéphanie François",
+    description: "Stéphanie François, ostéopathe à Lille. Consultations adultes, femmes enceintes, nourrissons, sportifs.",
     images: ["/og-image.jpg"],
   },
   alternates: {

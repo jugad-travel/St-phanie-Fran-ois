@@ -101,7 +101,7 @@ export function generatePersonSchema() {
     "@type": "Person",
     "@id": `${baseUrl}/#person`,
     name: "Stéphanie François",
-    jobTitle: "Ostéopathe D.O",
+    jobTitle: "Ostéopathe",
     worksFor: {
       "@id": `${baseUrl}/#organization`,
     },
@@ -121,7 +121,7 @@ export function generatePersonSchema() {
     },
     hasCredential: {
       "@type": "EducationalOccupationalCredential",
-      credentialCategory: "Diplôme d'Ostéopathe D.O",
+      credentialCategory: "Diplôme d'Ostéopathe",
       recognizedBy: {
         "@type": "Organization",
         name: "Ecole Supérieure d'Ostéopathie - Lille",
