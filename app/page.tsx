@@ -69,7 +69,7 @@ export default function HomePage() {
       />
 
       {/* Avis Google */}
-      <section className="py-6 sm:py-8" style={{ backgroundColor: '#a4897b' }}>
+      <section className="py-6 sm:py-8" style={{ backgroundColor: '#7e5865' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-6 sm:mb-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-white">

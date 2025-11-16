@@ -50,18 +50,18 @@ export function Hero({
   return (
     <section className="relative w-full h-[85vh] min-h-[500px] md:min-h-[700px] max-h-[1000px] overflow-hidden flex flex-col md:flex-row" style={{ margin: 0, padding: 0 }}>
       {/* Partie gauche - Fond avec couleur exacte */}
-      <div className="absolute inset-0 w-full md:w-1/2 z-0" style={{ backgroundColor: '#a4897b' }}>
+      <div className="absolute inset-0 w-full md:w-1/2 z-0" style={{ backgroundColor: '#7e5865' }}>
         {/* Overlay subtil pour plus de profondeur */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/5 via-transparent to-transparent" />
       </div>
 
       {/* Partie droite - Image sur mobile, Vidéo sur desktop */}
-      <div className="absolute right-0 top-0 bottom-0 w-full md:w-1/2 overflow-hidden z-10" style={{ backgroundColor: '#a4897b' }}>
+      <div className="absolute right-0 top-0 bottom-0 w-full md:w-1/2 overflow-hidden z-10" style={{ backgroundColor: '#7e5865' }}>
         {/* Image sur mobile uniquement */}
         <div className="md:hidden relative w-full h-full">
           <Image
             src={mobileImageSrc}
-            alt="Colombine Poupard, Ostéopathe D.O"
+            alt="Stéphanie François, Ostéopathe D.O"
             fill
             className="object-cover"
             style={{ objectPosition: "center center" }}
@@ -115,7 +115,7 @@ export function Hero({
           {/* Overlay léger sur la vidéo */}
           <div className="absolute inset-0 bg-gradient-to-l from-black/30 to-transparent z-20 pointer-events-none" />
           {/* Masquer le logo Grok en bas - dégradé subtil */}
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#a4897b] via-[#a4897b]/95 to-transparent z-30 pointer-events-none" />
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#7e5865] via-[#7e5865]/95 to-transparent z-30 pointer-events-none" />
         </div>
       </div>
 
